@@ -1,5 +1,7 @@
 # Stash Userscript Performer Image Upscaler
 
+## [INSTALL USERSCRIPT](upscale.user.js?raw=1)
+
 This is a userscript for Stash App, that adds an upscale button on the performer page, that upon clicking allows you to select an appriate upcaling model then upscale and update the image.
 
 It uses [UpscalerJS](https://github.com/thekevinscott/UpscalerJS)
