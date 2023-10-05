@@ -8,6 +8,36 @@ It uses [UpscalerJS](https://github.com/thekevinscott/UpscalerJS)
 
 Upon upscaling please be patient if upscaling an already large image, it may freeze or crash.
 
+## Prequisites
+
+Stash updated it's security policy so it doesn't work anymore with require lines in the userscript from an external source to the model files. You need to host them yourself using the Custom Served Folders feature in Stash.
+
+Copy the repository with
+
+```yaml
+git clone https://github.com/elkorol/Stash-Userscript-Upscaler.git
+```
+
+I've included the model files in this repo for you to use, otherwise you can install the most up to date versions with NPM. I.e.
+
+npm install @upscalerjs/esrgan-slim
+npm install @upscalerjs/esrgan-medium
+npm install @upscalerjs/esrgan-thick
+
+### Example *Add this to config.yml*
+
+```yaml
+custom_served_folders:
+  /models: {Including drive letter, Path to Stash installation}\custom\models
+```
+
+*I.E.*
+
+```yaml
+custom_served_folders:
+  /models: B:\Stash\custom\models
+```
+
 ## Usage
 
 Open and copy or load the Javascript into your favourite Userscript Manager, like Tampermonkey or Violent Monkey and change @match to point to the URL of your Stash configuration.
