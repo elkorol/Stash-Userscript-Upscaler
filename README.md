@@ -24,6 +24,8 @@ npm install @upscalerjs/esrgan-slim
 npm install @upscalerjs/esrgan-medium
 npm install @upscalerjs/esrgan-thick
 
+If using NPM, once you have installed the modules, go into the node_modules folder in the @upscalerjs, copy over the ergsan folders to the models folder for your custom served folders. If needed change the modelNames variable in the script to point to the model.jsons for each model.
+
 ### Example *Add this to config.yml*
 
 ```yaml
